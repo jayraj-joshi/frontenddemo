@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    max-width: 100%;
+    margin: 0; /* Remove margin for mobile */
+    padding: 20px;
+    background: #fff;
+    border-radius: 0; /* Remove rounded corners for full-screen effect */
+    box-shadow: none; /* Remove shadow for simplicity on mobile */
+    height: 100vh; /* Occupy full screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#question {
+    font-size: 1.5em; /* Increase font size for better readability */
+    margin-bottom: 20px;
+    padding: 0 10px; /* Add padding for better spacing */
+}
+
+#options {
+    width: 100%; /* Ensure buttons stretch to container width */
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    width: 100%; /* Ensure buttons stretch to full width */
+    padding: 15px; /* Increase padding for touch comfort */
+    font-size: 1.2em; /* Increase font size for readability */
+    margin: 10px 0; /* Add margin for spacing between buttons */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd; /* Slight hover effect for feedback */
+}
+
+button.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.wrong {
+    background-color: #F44336;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#timer {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold; /* Make timer more prominent */
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1em; /* Adjust base font size for smaller screens */
+    }
+
+    .quiz-container {
+        padding: 10px; /* Reduce padding for smaller devices */
+    }
+
+    #question {
+        font-size: 1.2em; /* Slightly smaller question font size for mobile */
+    }
+
+    button {
+        font-size: 1em; /* Adjust button text size */
+        padding: 12px; /* Reduce button padding for smaller screens */
+    }
+}
