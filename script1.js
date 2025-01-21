@@ -24,7 +24,7 @@ async function fetchQuestions() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ query: "Generation and Conduction of Nerve Impulse" })
+            body: JSON.stringify({ query: "LIGHT REACTION" })
         });
 
         if (!response.ok) {
